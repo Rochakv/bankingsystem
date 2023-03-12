@@ -1,0 +1,11 @@
+<%- include("header") -%>
+<a href="/"><h1 class="h1main">dfc Bank</h1></a>
+<h2 align="center"class="welh2">Please Fill The Required Field</h2>
+<form class="send" action="/sendmoney" method="post">
+  <input name="your"class="sendtowhom" type="text" placeholder="Enter your username"autocomplete="off">
+  <input name="towhom"class="sendtowhom" type="text" placeholder="Enter username to whom you want to send money"autocomplete="off">
+  <input name="amount"class="sendamount" type="text" placeholder="Enter amount"autocomplete="off">
+  <button class="logsubmit"type="submit" name="button">SEND</button>
+</form>
+
+<%- include("footer") -%>

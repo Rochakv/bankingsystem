@@ -1,0 +1,14 @@
+<%- include("header") -%>
+<a href="/"><h1 class="h1main">dfc Bank</h1></a>
+<h2 class="createhead"align="center">New User</h2>
+<form class="createform" action="/create" method="post">
+  <input class="fn"type="text" name="firstname" placeholder="First Name"autocomplete="off">
+  <input class="ln"type="text" name="lastname" placeholder="Last Name"autocomplete="off">
+  <input class="un"type="text" name="username" placeholder="Username"autocomplete="off">
+  <input class="em"type="text" name="email" placeholder="E-mail"autocomplete="off">
+  <input class="pw"type="text" name="password" placeholder="Password"autocomplete="off">
+  <input class="pw"type="text" name="bal" placeholder="Add Initial Balance"autocomplete="off">
+
+  <button class="createsubmit"type="submit" name="button">SUBMIT</button>
+</form>
+<%- include("footer") -%>

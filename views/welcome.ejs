@@ -1,0 +1,16 @@
+<%- include("header") -%>
+<a href="/"><h1 class="h1main">dfc Bank</h1></a>
+<div class="wel">
+  <div class="wel1">
+    <h2 class="welh2">Welcome <%=welcomeusername%> </h2>
+    <p class="welp">Your Current Balance is : $<%=balnce%></p>
+  </div>
+  <div class="wel2">
+    <a href="/sendmoney"><button class="welb1" type="submit" name="sendmoney">Send Money</button></a>
+    <a href="/passbook"><button class="welb2"type="submit" name="checkpassbook">Check Passbook</button></a>
+  </div>
+</div>
+
+
+
+<%- include("footer") -%>

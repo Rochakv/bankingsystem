@@ -1,0 +1,21 @@
+<%- include("header") -%>
+<a href="/"><h1 class="h1main">dfc Bank</h1></a>
+<h2 align="center"class="loghead">Passbook</h2>
+
+<table>
+    <tr class="trr">
+      <th>By</th>
+      <th>To</th>
+      <th>Amount</th>
+      <th>Total Balance</th>
+    </tr>
+    <%ele.details.forEach(function(data){%>
+    <tr>
+      <th><%=data.by%></th>
+      <th><%=data.to%></th>
+      <th><%=data.amt%></th>
+      <th><%=data.balance%></th>
+    </tr>
+  <%})%>
+</table>
+<%- include("footer") -%>
